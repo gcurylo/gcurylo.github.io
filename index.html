@@ -2,50 +2,284 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Małgorzata Curyło</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dr Gosia Curyło - OzGrav Research Fellow</title>
+  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
 </head>
 <body>
 
 <aside>
   <figure>
-    <img id="avatar" src="css/ja.jpg" alt="Avatar">
-    <figcaption>Małgorzata (Gosia) Curyło</figcaption>
+    <img id="avatar" src="assets/img/avatar.jpg" alt="Gosia Curyło">
+    <figcaption>Gosia (Małgorzata) Curyło</figcaption>
   </figure>
-  <div id="podpis">Ph.D.</div>
+  <div id="podpis">OzGrav Research Fellow</div>
 
   <nav>
     <ul>
-      <li><a class="selected" href="index.html">About me</a></li>
-      <li><a href="cv/index.html">My CV</a></li>
+      <li><a data-tab="about" href="#about">About me</a></li>
+      <li>
+        <a data-tab="research" href="#research">Research</a>
+        <ul class="sublist">
+          <li><a target="_blank" rel="noopener" href="https://ui.adsabs.harvard.edu/search/filter_author_facet_hier_fq_author=NOT&filter_author_facet_hier_fq_author=*%3A*&filter_author_facet_hier_fq_author=author_facet_hier%3A%220%2FBilnik%2C%20W%22&filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq=%7B!type%3Daqp%20v%3D%24fq_author%7D&fq_author=(*%3A*%20NOT%20author_facet_hier%3A%220%2FBilnik%2C%20W%22)&fq_database=(database%3A%22astronomy%22)&q=%20author%3A%22cury%C5%82o%2Cm%22&sort=date%20desc%2C%20bibcode%20desc&p_=0">All papers</a></li>
+          <li><a target="_blank" rel="noopener" href="https://ui.adsabs.harvard.edu/search/filter_author_facet_hier_fq_author=NOT&filter_author_facet_hier_fq_author=((*%3A*%20NOT%20author_facet_hier%3A%220%2FBilnik%2C%20W%22)%20NOT%20author_facet_hier%3A%220%2FAgathos%2C%20M%22)&filter_author_facet_hier_fq_author=author_facet_hier%3A%220%2FAharonian%2C%20F%22&filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq=%7B!type%3Daqp%20v%3D%24fq_author%7D&fq_author=(((*%3A*%20NOT%20author_facet_hier%3A%220%2FBilnik%2C%20W%22)%20NOT%20author_facet_hier%3A%220%2FAgathos%2C%20M%22)%20NOT%20author_facet_hier%3A%220%2FAharonian%2C%20F%22)&fq_database=(database%3A%22astronomy%22)&p_=0&q=%20author%3A%22cury%C5%82o%2Cm%22&sort=date%20desc%2C%20bibcode%20desc">Most important papers</a></li>
+        </ul>
+      </li>
+      <li><a data-tab="cv" href="#cv">My CV</a></li>
     </ul>
   </nav>
 
   <div id="follow">
-    <a target="_blank" href="https://www.instagram.com/astro_gosia" class="fa fa-instagram"></a>
-    <a target="_blank" href="https://www.researchgate.net/profile/Malgorzata_Curylo" class="ai ai-researchgate"></a>
+    <a target="_blank" rel="noopener" href="https://www.instagram.com/astro_gosia" class="fa fa-instagram" aria-label="Instagram" title="Instagram"></a>
+    <a target="_blank" rel="noopener" href="https://www.researchgate.net/profile/Malgorzata_Curylo" class="ai ai-researchgate" aria-label="ResearchGate" title="ResearchGate"></a>
+    <a id="email-link" class="fa fa-envelope" data-e="Z29zaWEuY3VyeWxvQG1vbmFzaC5lZHU=" href="#" aria-label="Email" title="Email"></a>
   </div>
 </aside>
 
 <main>
 
-  <section id="content_box">
-    <p>
-      I'm a research fellow at Monash University in the OzGrav group led by Paul Lasky and Eric Thrane.
-    </p>
-    <p>
-      My scientific interests mainly focus on multi-messenger astrophysics of supermassive black hole binaries
-      (especially their gravitational wave emission) and pulsars. I have observational experience with LOFAR and
-      Parkes radio telescopes and work as a member of the Parkes Pulsar Timing Array (PPTA) and the MeerKAT Pulsar Timing Array (MPTA) collaborations. 
-      Probably, the biggest joy of my work is the opportunity to combine being an observer with pursuing theoretical studies.
-    </p>
-    <p>In my free time, I play violin in the orchestra.</p>
-    <p>To contact me, please find information included in the <strong>My CV</strong> section.</p>
+  <!-- ABOUT ME -->
+  <section id="about" class="tab-section" aria-label="About me">
+    <div id="content_box">
+      <div class="about-box">
+        <p>
+          I'm a research fellow at Monash University in the OzGrav group led by Paul Lasky and Eric Thrane.
+        </p>
+        <p>
+          My scientific interests mainly focus on multi-messenger astrophysics of supermassive black hole binaries
+          (especially their gravitational wave emission) and pulsars. I have observational experience with LOFAR and
+          Parkes radio telescopes and work as a member of the Parkes Pulsar Timing Array (PPTA) and the MeerKAT Pulsar
+          Timing Array (MPTA) collaborations. Probably, the biggest joy of my work is the opportunity to combine being
+          an observer with pursuing theoretical studies.
+        </p>
+        <p>In my free time, I enjoy playing violin in the orchestra and horseback riding.</p>
+      </div>
+    </div>
   </section>
+
+  <!-- RESEARCH -->
+  <section id="research" class="tab-section" aria-label="Research">
+    <div id="content_box" class="research">
+      <div class="research-tiles" id="research-tiles">
+        <div class="tile" data-topic="pulsars" tabindex="0" role="button" aria-label="Pulsars and pulsar timing — click to read more" style="background-image: url('assets/img/research/pulsar-timing.png'), linear-gradient(160deg, #262b52, #0a0c1c);">
+          <div class="tile-inner">
+            <h3>Pulsars and pulsar timing</h3>
+            <span class="tile-cta">Click to read more →</span>
+          </div>
+        </div>
+        <div class="tile" data-topic="smbh" tabindex="0" role="button" aria-label="Supermassive black holes and galaxies — click to read more" style="background-image: url('assets/img/research/smbh.jpg'), linear-gradient(160deg, #262b52, #0a0c1c);">
+          <div class="tile-inner">
+            <h3>Supermassive black holes and galaxies</h3>
+            <span class="tile-cta">Click to read more →</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="research-panels" id="research-panels">
+        <div class="research-panel" data-topic="pulsars">
+          <button type="button" class="research-back">← All topics</button>
+          <h2>Pulsars and pulsar timing</h2>
+          <p class="research-intro">Sixty years after their discovery, pulsars still puzzle us and yet they've become powerful physics probes. Their pulse profiles, polarimetry and timing encode information about neutron star interiors and emission mechanisms, but also about the interstellar medium and Galactic magnetic fields. Moreover, thanks to their extraordinary rotational stability, we can learn about gravitational waves from supermassive black holes residing in distant galaxy centres and possibly the early Universe. I observe pulsars with the Parkes Murriyang and MeerKAT radio telescopes, and develop wideband polarimetry and timing techniques to study them across frequency and time. As part of the PPTA and MPTA collaborations, I use these methods to search for gravitational waves. With this broad range of research topics, I am committed to building a bridge between pulsar timing arrays and galaxy studies.</p>
+          <div class="pub-list">
+            <div class="pub-item">
+              <a class="pub-thumb" href="https://ui.adsabs.harvard.edu/abs/2026MNRAS.549ag835C/abstract" target="_blank" rel="noopener noreferrer" aria-label="Frequency- and phase-resolved polarimetry of millisecond pulsars and its application to timing — view on ADS">
+                <svg viewBox="0 0 24 24"><polygon points="9.6,9.6 1,2.4 3.4,1"/><polygon points="14.4,14.4 20.6,23 22.6,21.6"/><circle cx="12" cy="12" r="3.1"/></svg>
+              </a>
+              <div class="pub-body">
+                <h3 class="pub-title">Frequency- and phase-resolved polarimetry of millisecond pulsars and its application to timing</h3>
+                <p class="pub-abstract">Pulsar timing is used for a variety of applications including tests of fundamental physics, probing the structure of neutron stars, and detecting nanohertz gravitational waves. Development of robust methods and generation of high-quality timing data is therefore of utmost importance. In this paper, we present a new technique for creating high-fidelity templates that can be used to measure the pulse times of arrival with significantly increased precision compared to existing methods. Our framework makes use of all available polarimetric information to generate frequency-dependent models of pulse-shape evolution of all four Stokes parameters. We apply this method to millisecond pulsars observed by the Parkes Pulsar Timing Array and show that it results in timing measurement uncertainties reduced up to ~20&ndash;30 per cent. We also present, for the first time, phase- and frequency-resolved polarimetric measurements of millisecond pulsars observed with the Parkes Murriyang ultra-wide-bandwidth low receiver. The data, plots, and codes underlying this analysis are made publicly available.</p>
+              </div>
+            </div>
+            <div class="pub-item">
+              <a class="pub-thumb" href="https://ui.adsabs.harvard.edu/abs/2026arXiv260419073C/abstract" target="_blank" rel="noopener noreferrer" aria-label="A comprehensive framework for phase-coherent mapping of the gravitational-wave sky with pulsar timing arrays — view on ADS">
+                <svg viewBox="0 0 24 24"><polygon points="9.6,9.6 1,2.4 3.4,1"/><polygon points="14.4,14.4 20.6,23 22.6,21.6"/><circle cx="12" cy="12" r="3.1"/></svg>
+              </a>
+              <div class="pub-body">
+                <h3 class="pub-title">A comprehensive framework for phase-coherent mapping of the gravitational-wave sky with pulsar timing arrays</h3>
+                <p class="pub-abstract">We present a practical implementation of a phase-coherent mapping technique for pulsar timing arrays that resolves the full complex polarisation state of the gravitational-wave sky as a function of direction and frequency. Unlike standard cross-correlation methods, this approach preserves the amplitude, phase, and polarisation of the signal in every sky pixel. The resulting maps constitute a compact, minimally processed summary of the data from which all subsequent analyses &mdash; characterisation of a stochastic background, searches for anisotropy, and identification of individual sources &mdash; can be derived within a single unified framework. Our implementation is fully compatible with established pulsar timing data analysis methods. We validate the framework through a series of realistic simulations with varying array configurations, noise properties, and signal types. We demonstrate robust recovery of source amplitudes and sky locations across different scenarios, and discuss the impact of polarisation leakage, noise, and direction-dependent array sensitivity on the recovery of astrophysical signals.</p>
+              </div>
+            </div>
+            <div class="pub-item">
+              <a class="pub-thumb" href="https://ui.adsabs.harvard.edu/abs/2023ApJ...944..128C/abstract" target="_blank" rel="noopener noreferrer" aria-label="Wide-band Timing of the Parkes Pulsar Timing Array UWL Data — view on ADS">
+                <svg viewBox="0 0 24 24"><polygon points="9.6,9.6 1,2.4 3.4,1"/><polygon points="14.4,14.4 20.6,23 22.6,21.6"/><circle cx="12" cy="12" r="3.1"/></svg>
+              </a>
+              <div class="pub-body">
+                <h3 class="pub-title">Wide-band Timing of the Parkes Pulsar Timing Array UWL Data</h3>
+                <p class="pub-abstract">In 2018 an ultra-wide-bandwidth low-frequency (UWL) receiver was installed on the 64&nbsp;m Parkes Radio Telescope, enabling observations with an instantaneous frequency coverage from 704 to 4032&nbsp;MHz. Here we present the analysis of a 3&nbsp;yr data set of 35 ms pulsars observed with the UWL by the Parkes Pulsar Timing Array, using wide-band timing methods. The two key differences compared to typical narrowband methods are (1) generation of two-dimensional templates accounting for pulse shape evolution with frequency and (2) simultaneous measurements of the pulse time of arrival (TOA) and dispersion measure (DM). This is the first time that wide-band timing has been applied to a uniform data set collected with a single large fractional bandwidth receiver, for which such techniques were originally developed. As a result of our study, we present a set of profile evolution models and new timing solutions, including initial noise analysis. Precision of our TOA and DM measurements is in the range of 0.005&ndash;2.08&nbsp;&mu;s and (0.043&ndash;14.24)&nbsp;&times;&nbsp;10<sup>&minus;4</sup>&nbsp;cm<sup>&minus;3</sup>&nbsp;pc, respectively, with 94% of the pulsars achieving a median TOA uncertainty of less than 1&nbsp;&mu;s.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="research-panel" data-topic="smbh">
+          <button type="button" class="research-back">← All topics</button>
+          <h2>Supermassive black holes and galaxies</h2>
+          <p class="research-intro">Supermassive black holes (SMBHs) sit at the centres of nearly every galaxy we look at, and we know they co-evolve with their hosts. However, the details of how this happens are still poorly understood. Tight binaries of SMBHs and their eventual mergers, together with the galaxy mergers that produce them, are fundamental building blocks in our picture of galaxy evolution, and yet we have never directly witnessed one. In my work I use large-scale cosmological simulations to study the connections between SMBH binaries and their host galaxies, and I link these predictions to observations — both gravitational waves detected by pulsar timing arrays and radio AGN in the electromagnetic band.</p>
+          <div class="pub-list">
+            <div class="pub-item">
+              <a class="pub-thumb" href="https://ui.adsabs.harvard.edu/abs/2024MNRAS.528.1053C/abstract" target="_blank" rel="noopener noreferrer" aria-label="Massive black hole binaries as sources of low-frequency gravitational waves and X-shaped radio galaxies — view on ADS">
+                <svg viewBox="0 0 24 24"><g transform="rotate(-24 12 12)"><ellipse cx="12" cy="12" rx="10.2" ry="4.2" fill="none" stroke="#cdd4ff" stroke-width="1.1"/><ellipse cx="12" cy="12" rx="6.8" ry="2.8" fill="none" stroke="#cdd4ff" stroke-width="1.1"/><ellipse cx="12" cy="12" rx="2.6" ry="1.5" fill="#cdd4ff"/></g></svg>
+              </a>
+              <div class="pub-body">
+                <h3 class="pub-title">Massive black hole binaries as sources of low-frequency gravitational waves and X-shaped radio galaxies</h3>
+                <p class="pub-abstract">We present the study of multimessenger signatures of massive black hole (MBH) binaries residing in the centres of galaxy merger remnants. In particular, we first focus on the gravitational wave background (GWB) produced by an ensemble of MBH binary inspirals in the frequency range probed by the Pulsar Timing Array (PTA) experiments. The improved estimates of the characteristic strain were obtained with the inclusion of environmental effects on the MBH binary orbital decay within the galaxy merger remnants, added in post-processing to the semi-analytical model of galaxy formation and evolution SHARK. Secondly, we explore two, intriguing in terms of the MBH binary evolution studies, hypotheses aiming to explain the origins of X-shaped radio galaxies &ndash; a peculiar type of objects with double lobe structures, constituting approximately 6&ndash;10 per cent of known radio loud galaxies. The two considered scenarios involve either an abrupt change in the jet direction after an MBH merger (a spin-flip) or an unresolved close binary, where each of the two components produces a jet. We find that the estimated GWB amplitude at the reference frequency f<sub>0</sub>&nbsp;=&nbsp;1&nbsp;yr<sup>&minus;1</sup> is in the range of A<sub>yr<sup>&minus;1</sup></sub>&nbsp;=&nbsp;1.20&times;10<sup>&minus;15</sup>&ndash;1.46&times;10<sup>&minus;15</sup>, which is 50 per cent lower than the strain of the signal detected by the PTA experiments. We also show that the spin-flip scenario considered in gas-poor mergers reproduces the observed properties of X-shaped radio galaxies well in terms of flip angle, redshift, and luminosity distributions.</p>
+              </div>
+            </div>
+            <div class="pub-item">
+              <a class="pub-thumb" href="https://ui.adsabs.harvard.edu/abs/2022A%26A...660A..68C/abstract" target="_blank" rel="noopener noreferrer" aria-label="Predictions for LISA and PTA based on SHARK galaxy simulations — view on ADS">
+                <svg viewBox="0 0 24 24"><g transform="rotate(-24 12 12)"><ellipse cx="12" cy="12" rx="10.2" ry="4.2" fill="none" stroke="#cdd4ff" stroke-width="1.1"/><ellipse cx="12" cy="12" rx="6.8" ry="2.8" fill="none" stroke="#cdd4ff" stroke-width="1.1"/><ellipse cx="12" cy="12" rx="2.6" ry="1.5" fill="#cdd4ff"/></g></svg>
+              </a>
+              <div class="pub-body">
+                <h3 class="pub-title">Predictions for LISA and PTA based on SHARK galaxy simulations</h3>
+                <p class="pub-abstract">We present our analysis of a set of populations of massive black hole (MBH) binaries generated in the recent semi-analytic model of galaxy evolution (SHARK). We focus on studying gravitational wave (GW) emission produced during MBH mergers in terms of their detectability with current and future detectors, namely, Pulsar Timing Arrays (PTAs) and Laser Interferometer Space Antenna (LISA). The key advantage of SHARK is that it provides a way to explore a number of distinct models of MBH and galaxy evolution processes within a consistent framework and it was also successfully tested against current constraints from electromagnetic observations. In our work, we studied 12 models that vary in terms of their MBH seed formation scenarios and we tested two different MBH growth and feedback models. Based on our estimates, we find that LISA will be able to detect several to several tens of merger events per year for the most and least massive seed scenarios, respectively. We also show that the strength of this relation depends on the MBH growth model, where in the most extreme case, we find twice as many detected events for the same initial seed masses. Finally, we estimated the amplitude of the GW background at nHz frequencies to be on the order of 1.4&times;10<sup>&minus;16</sup>&ndash;1.1&times;10<sup>&minus;15</sup>. This value depends solely on the time delay between the merger of galaxies and their MBHs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MY CV -->
+  <section id="cv" class="tab-section" aria-label="Curriculum Vitae">
+    <div id="content_box" class="cv">
+      <div class="cv-wrap">
+
+        <div class="cv-header">
+          <div>
+            <h1>Gosia (Małgorzata) Curyło</h1>
+            <div class="loc">Melbourne, Victoria, Australia</div>
+          </div>
+          <a class="cv-download" href="assets/cv/GCurylo_CV.pdf" target="_blank" rel="noopener" download>Download CV (PDF)</a>
+        </div>
+
+        <div class="cv-section">
+          <h2>Research Interests</h2>
+          <p>Pulsar timing, radio astronomy, gravitational waves, massive black holes, multi-messenger astrophysics.</p>
+        </div>
+
+        <div class="cv-section">
+          <h2>Experience</h2>
+          <div class="cv-entry">
+            <div class="row"><span class="title">OzGrav Research Fellow</span><span class="date">July 2024 – Present</span></div>
+            <div class="sub">Monash University</div>
+          </div>
+        </div>
+
+        <div class="cv-section">
+          <h2>Education</h2>
+          <div class="cv-entry">
+            <div class="row"><span class="title">PhD in Astrophysics</span><span class="date">April 2024</span></div>
+            <div class="sub">University of Warsaw, Poland</div>
+          </div>
+          <div class="cv-entry">
+            <div class="row"><span class="title">Master degree in Astronomy</span><span class="date">September 2017</span></div>
+            <div class="sub">Jagiellonian University, Kraków, Poland</div>
+          </div>
+          <div class="cv-entry">
+            <div class="row"><span class="title">Bachelor degree in Astronomy</span><span class="date">September 2016</span></div>
+            <div class="sub">Jagiellonian University, Kraków, Poland</div>
+          </div>
+        </div>
+
+        <div class="cv-section">
+          <h2>Grants and Awards</h2>
+          <div class="cv-entry">
+            <div class="row"><span class="title">Cross-Nodal Collaboration recognition</span><span class="date">2025</span></div>
+            <div class="sub">OzGrav retreat 2025</div>
+          </div>
+          <div class="cv-entry">
+            <div class="row"><span class="title">PRELUDIUM grant of the Polish National Science Center</span><span class="date">2022 – 2024</span></div>
+            <div class="sub">PI of the project: Formation and evolution of massive black holes</div>
+          </div>
+          <div class="cv-entry">
+            <div class="row"><span class="title">Teaching Award</span><span class="date">2021</span></div>
+            <div class="sub">Faculty of Physics, University of Warsaw, Poland</div>
+          </div>
+          <div class="cv-entry">
+            <div class="row"><span class="title">Best poster award</span><span class="date">2020</span></div>
+            <div class="sub">First Virtual Scientific Conference of Campus Ochota, Poland</div>
+          </div>
+          <div class="cv-entry">
+            <div class="row"><span class="title">Best talk award</span><span class="date">2019</span></div>
+            <div class="sub">Astronomy student conference KSAKN, Poznań, Poland</div>
+          </div>
+        </div>
+
+        <div class="cv-section">
+          <h2>Student Supervision and Teaching</h2>
+          <div class="cv-entry">
+            <div class="row"><span class="title">Monash University, Australia</span><span class="date">2025 – Present</span></div>
+            <div class="sub">Supervision of 3 students (international summer student, Monash undergraduate and honours students)</div>
+          </div>
+          <div class="cv-entry">
+            <div class="row"><span class="title">University of Warsaw, Poland</span><span class="date">2019 – 2023</span></div>
+            <div class="sub">4 years of teaching general and spherical astronomy and general astrophysics</div>
+          </div>
+        </div>
+
+        <div class="cv-section">
+          <h2>Leadership and Service</h2>
+          <div class="cv-entry">
+            <div class="row"><span class="title">Journal referee</span></div>
+            <div class="sub">ApJ, PRD, MNRAS</div>
+          </div>
+          <div class="cv-entry">
+            <div class="row"><span class="title">Observing proposal reviewer</span></div>
+            <div class="sub">Five-hundred-meter Aperture Spherical Telescope (FAST)</div>
+          </div>
+          <div class="cv-entry">
+            <div class="row"><span class="title">Steering committee member</span></div>
+            <div class="sub sub-row"><span>Parkes Pulsar Timing Array</span><span class="date">2025 – Present</span></div>
+            <div class="sub sub-row"><span>International Pulsar Timing Array</span><span class="date">2025</span></div>
+          </div>
+          <div class="cv-entry">
+            <div class="row"><span class="title">Parkes Pulsar Timing Array collaboration</span><span class="date">2019 – Present</span></div>
+            <div class="sub">Observations, data analysis, methods and software development</div>
+          </div>
+          <div class="cv-entry">
+            <div class="row"><span class="title">MeerKAT Pulsar Timing Array collaboration</span><span class="date">2024 – Present</span></div>
+            <div class="sub">Data analysis, methods and software development</div>
+          </div>
+          <div class="cv-entry">
+            <div class="row"><span class="title">Organisation of seminars, conferences and workshops</span></div>
+            <div class="sub sub-row"><span>Monash University astroseminar series</span><span class="date">Present</span></div>
+            <div class="sub sub-row"><span>International Pulsar Timing Array Student Week SOC</span><span class="date">2021</span></div>
+            <div class="sub sub-row"><span>LVK meeting LOC</span><span class="date">2019</span></div>
+          </div>
+        </div>
+
+        <div class="cv-section">
+          <h2>Publications</h2>
+          <p>
+            Significant contribution to 12 papers, of which 5 are first author (excluding large collaboration papers).
+          </p>
+          <div class="cv-btn-row">
+            <a class="cv-download" target="_blank" rel="noopener" href="https://ui.adsabs.harvard.edu/search/filter_author_facet_hier_fq_author=NOT&filter_author_facet_hier_fq_author=((*%3A*%20NOT%20author_facet_hier%3A%220%2FBilnik%2C%20W%22)%20NOT%20author_facet_hier%3A%220%2FAgathos%2C%20M%22)&filter_author_facet_hier_fq_author=author_facet_hier%3A%220%2FAharonian%2C%20F%22&filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq=%7B!type%3Daqp%20v%3D%24fq_author%7D&fq_author=(((*%3A*%20NOT%20author_facet_hier%3A%220%2FBilnik%2C%20W%22)%20NOT%20author_facet_hier%3A%220%2FAgathos%2C%20M%22)%20NOT%20author_facet_hier%3A%220%2FAharonian%2C%20F%22)&fq_database=(database%3A%22astronomy%22)&p_=0&q=%20author%3A%22cury%C5%82o%2Cm%22&sort=date%20desc%2C%20bibcode%20desc">Most important papers</a>
+            <a class="cv-download" target="_blank" rel="noopener" href="https://ui.adsabs.harvard.edu/search/filter_author_facet_hier_fq_author=NOT&filter_author_facet_hier_fq_author=*%3A*&filter_author_facet_hier_fq_author=author_facet_hier%3A%220%2FBilnik%2C%20W%22&filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq=%7B!type%3Daqp%20v%3D%24fq_author%7D&fq_author=(*%3A*%20NOT%20author_facet_hier%3A%220%2FBilnik%2C%20W%22)&fq_database=(database%3A%22astronomy%22)&q=%20author%3A%22cury%C5%82o%2Cm%22&sort=date%20desc%2C%20bibcode%20desc&p_=0">All publications</a>
+          </div>
+        </div>
+
+        <div class="cv-section">
+          <h2>Selected Conferences</h2>
+          <p>Total number of conference / seminar talks: 31.</p>
+          <div class="cv-entry">
+            <div class="title">Invited talks</div>
+            <div class="sub">London-Oldenburg Relativity Seminar, Swinburne University of Technology, University of Melbourne, Particle Astrophysics in Poland, International Pulsar Timing Array Student Workshop, University of Warsaw, Second Edition of the Virtual Scientific Conference of the Ochota Campus, Polish Astronomical Society Meeting, Nicolaus Copernicus Astronomical Center Poland.</div>
+          </div>
+          <div class="cv-entry">
+            <div class="title">Selected contributed talks</div>
+            <div class="sub">Pulsar25 (Italy 2025), Amaldi16 (Scotland 2025, online 2021), Fourth European Physical Society Conference on Gravitation: Black Holes (Spain 2023), European Astronomical Society Annual Meeting (Poland 2023, online 2021), Gravitational Wave Physics and Astronomy Workshop GWPAW (Australia 2022), 56th Rencontres de Moriond (Italy 2022), International Pulsar Timing Array Science meetings.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
 </main>
 
+<script src="assets/js/site.js"></script>
 </body>
 </html>
-
